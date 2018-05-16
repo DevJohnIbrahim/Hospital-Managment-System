@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Page</title>
+</head>
+<body>
+<h4 style="color:red;">Sorry But this Page is Found URL or the Friendly Name is Registered before please add a new one or delete this existing page</h4>
+<form action = "..\Controller\PageController.php" method="post">
+    Page Path : <input type = "text" name = "url" required placeholder="../View/PageName"><br>
+    Friendly Name : <input type = "text" name = 'name' required><br>
+    <input type = "submit" name = "AddPage" value="Add">
+    <a href="Menue.php"><input type="button" value = 'Back'> </a>
+</form>
+
+</body>
+</html>
