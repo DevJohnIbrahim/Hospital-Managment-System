@@ -1,0 +1,2442 @@
+* 
+{
+
+  box-sizing: border-box;
+
+}
+
+body 
+
+{
+
+  font-family: Verdana, sans-serif;
+
+  margin-bottom: 20PX;
+
+}
+
+/* Page Header */
+
+.header 
+
+{
+
+  overflow: hidden;
+
+  background-color: #f1f1f1;
+
+  padding: 20px 10px;
+
+  max-height: 100px;
+
+}
+
+/* Header Tabs */
+
+.header a 
+
+{
+
+  float: left;
+
+  color: black;
+
+  text-align: center;
+
+  padding: 12px;
+
+  text-decoration: none;
+
+  font-size: 18px; 
+
+  line-height: 30px;
+
+  border-radius: 4px;
+
+}
+
+/* The Company Logo */
+
+.header a.logo 
+
+{
+
+  font-size: 25px;
+
+  font-weight: bold;
+
+}
+
+.header a:hover 
+
+{
+
+  background-color: #ddd;
+
+  color: black;
+}
+
+.header a.active 
+
+{
+
+  background-color: dodgerblue;
+
+  color: white;
+
+}
+
+.header-left
+
+{
+
+
+  float: left;
+
+  margin-left: 10px;
+
+}
+
+@media screen and (max-width: 500px) 
+
+{
+
+  .header a 
+
+  {
+  
+    float: none;
+  
+    display: block;
+  
+    text-align: left;
+  
+  }
+  
+  .header-right 
+
+  {
+  
+    float: none;
+  
+  }
+
+}
+
+/* Start of Regestration Buttons */
+
+.header-right 
+
+{
+
+  float: right;
+
+  margin-right: 5px;
+
+}
+
+.header-right button 
+
+{
+
+  background-color: dodgerblue;
+
+  color: white;
+
+  padding: 14px 20px;
+
+  cursor: pointer;
+
+  opacity: 0.9;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  font-size: 18px; 
+
+  border-radius: 4px;
+
+}
+
+.header-right button:hover 
+
+{
+
+  opacity:1;
+
+}
+
+/* End of Regestration Buttons */
+
+/* End of Page Header */
+
+/* Sign Up Model */
+
+.modal1 input[type=text], input[type=password] 
+
+{
+
+  width: 100%;
+
+  padding: 15px;
+
+  margin: 5px 0 22px 0;
+
+  display: inline-block;
+
+  border: none;
+
+  background: #f1f1f1;
+
+}
+
+/* Add a background color when the inputs get focus */
+
+.modal1 input[type=text]:focus, input[type=password]:focus 
+
+{
+
+  background-color: #ddd;
+
+  outline: none;
+
+}
+
+/* Set a style for all buttons */
+
+.modal1 button 
+
+{
+
+  background-color: dodgerblue;
+    
+  color: white;
+
+  padding: 14px 20px;
+
+  margin: 8px 0;
+
+  border: none;
+
+  cursor: pointer;
+
+  width: 100%;
+
+  opacity: 0.9;
+
+}
+
+button:hover 
+
+{
+
+    opacity:1;
+
+}
+
+/* Extra styles for the cancel button */
+
+.cancelbtn 
+
+{
+
+  padding: 14px 20px;
+
+}
+
+/* Float cancel and signup buttons and add an equal width */
+
+.cancelbtn, .signupbtn, .loginbtn
+
+{
+
+  float: left;
+
+  width: 50%;
+
+  background: dodgerblue;
+
+
+}
+
+/* Add padding to container elements */
+
+.container1
+
+{
+
+  padding: 16px;
+
+}
+
+/* The Modal (background) */
+
+.modal1
+
+{
+
+  display: none; /* Hidden by default */
+
+  position: fixed; /* Stay in place */
+
+  z-index: 1; /* Sit on top */
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%; /* Full width */
+
+  height: 100%; /* Full height */
+
+  overflow: auto; /* Enable scroll if needed */
+
+  background-color: #474e5d;
+
+  padding-top: 50px;
+
+}
+
+/* Modal Box */
+
+.modal1-content 
+
+{
+
+  background-color: #fefefe;
+
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+
+  border: 1px solid #888;
+
+  width: 80%; /* Could be more or less, depending on screen size */
+
+}
+
+.modal1
+/* Style the horizontal ruler */
+
+hr 
+
+{
+
+  order: 1px solid #f1f1f1;
+
+  margin-bottom: 25px;
+
+}
+ 
+/* The Close Button (x) */
+
+.close 
+
+{
+
+  position: absolute;
+
+  right: 35px;
+
+  top: 15px;
+
+  font-size: 40px;
+
+  font-weight: bold;
+
+  color: #f1f1f1;
+
+}
+
+.close:hover, .close:focus 
+
+{
+
+  color: #f44336;
+
+  cursor: pointer;
+
+}
+
+/* Clear floats */
+
+.clearfix::after 
+
+{
+
+  content: "";
+
+  clear: both;
+
+  display: table;
+
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 300px) 
+
+{
+
+  .cancelbtn, .signupbtn 
+
+  {
+
+    width: 100%;
+
+  }
+
+}
+
+/* End of Sign Up Model */
+
+/* Start of Log In Model */
+
+/* Center the image and position the close button */
+
+.imgcontainer 
+
+{
+
+  text-align: center;
+
+  margin: 24px 0 12px 0;
+
+  position: relative;
+
+}
+
+
+
+/* Add Zoom Animation */
+
+.animate 
+
+{
+
+  -webkit-animation: animatezoom 0.6s;
+
+  animation: animatezoom 0.6s
+
+}
+
+@-webkit-keyframes animatezoom 
+
+{
+
+  from 
+
+  {
+
+    -webkit-transform: scale(0)
+
+  } 
+
+  to 
+
+  {
+
+    -webkit-transform: scale(1)
+
+  }
+
+}
+    
+@keyframes animatezoom 
+
+{
+    
+  from 
+
+  {
+
+    transform: scale(0)
+
+  } 
+
+  to 
+
+  {
+
+    transform: scale(1)
+
+  }
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) 
+
+{
+    
+  span.psw 
+
+  {
+    
+    display: block;
+    
+    float: none;
+    
+  }
+    
+}
+
+/* End of Log In Model */
+
+/* Start of Slide Show */
+
+.mySlides 
+
+{
+ 
+  display: none;
+
+}
+
+.mySlides img 
+
+{
+ 
+  vertical-align: middle;
+
+  width: 500px;
+
+  height: 500px;
+
+}
+
+/* Slide Containter */
+
+.slideshow-container 
+
+{
+
+  max-width: 1000px;
+
+  position: relative;
+
+  margin: auto;
+
+  margin-top: 10px;
+
+}
+
+/* Caption text */
+
+.text 
+
+{
+
+  color: #f2f2f2;
+
+  font-size: 15px;
+
+  padding: 8px 12px;
+
+  position: absolute;
+
+  bottom: 8px;
+
+  width: 100%;
+
+  text-align: center;
+
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext 
+
+{
+
+  color: #f2f2f2;
+
+  font-size: 12px;
+
+  padding: 8px 12px;
+
+  position: absolute;
+
+  top: 0;
+
+}
+
+/* The dots/bullets/indicators */
+
+.dot 
+
+{
+
+  height: 15px;
+
+  width: 15px;
+
+  margin: 0 2px;
+
+  background-color: #bbb;
+
+  border-radius: 50%;
+
+  display: inline-block;
+
+  transition: background-color 0.6s ease;
+
+}
+
+/* The Current Active Image */
+
+.active 
+
+{
+
+  background-color: #717171;
+
+}
+
+/* Fading animation */
+
+.fade 
+
+{
+
+  -webkit-animation-name: fade;
+
+  -webkit-animation-duration: 1.5s;
+
+  animation-name: fade;
+
+  animation-duration: 1.5s;
+
+}
+
+@-webkit-keyframes fade 
+
+{
+
+  from 
+
+  {
+
+    opacity: .4
+
+  } 
+
+  to 
+
+  {
+
+    opacity: 1
+
+  }
+
+}
+
+@keyframes fade 
+
+{
+
+  from 
+
+  {
+
+    opacity: .4
+
+  } 
+  
+  to 
+
+  {
+
+    opacity: 1
+
+  }
+
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) 
+
+{
+
+  .text 
+
+  {
+
+    font-size: 11px
+
+  }
+
+}
+
+.contactcontainer input[type=text], textarea 
+
+{
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    box-sizing: border-box;
+
+    margin-top: 6px;
+
+    margin-bottom: 16px;
+
+    resize: vertical;
+
+}
+
+.contactcontainer input[type=submit] 
+
+{
+
+    background-color: dodgerblue;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+}
+
+.contactcontainer input[type=submit]:hover 
+
+{
+
+    background-color: red;
+
+}
+
+.contactcontainer 
+
+{
+
+    border-radius: 5px;
+
+    background-color: #f2f2f2;
+
+    padding: 20px;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+}
+
+.header a 
+
+{
+
+  float: left;
+
+  color: black;
+
+  text-align: center;
+
+  padding: 12px;
+
+  text-decoration: none;
+
+  font-size: 18px; 
+
+  line-height: 30px;
+
+  border-radius: 4px;
+
+}
+
+.history button, .history a
+
+{
+
+  float: left;
+
+  padding: 6px 10px;
+
+  margin-top: 8px;
+
+  margin-right: 16px;
+
+  background: dodgerblue;
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  color: black;
+
+  border: none;
+
+}
+
+.history button:hover, .history a:hover
+
+{
+
+  background-color: white;
+
+  color: black;
+
+}
+
+.fa 
+
+{
+
+  padding: 5px;
+
+  font-size: 30px;
+
+  width: 30px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  margin: 5px 2px;
+
+}
+
+.fa:hover 
+
+{
+
+    opacity: 0.7;
+
+}
+
+.fa-facebook 
+
+{
+
+  background: #3B5998;
+
+  color: white;
+
+}
+
+.fa-twitter
+
+{
+
+  background: #55ACEE;
+
+  color: white;
+
+}
+
+.fa-google 
+
+{
+
+  background: #dd4b39;
+
+  color: white;
+
+}
+
+.fa-linkedin 
+
+{
+
+  background: #007bb5;
+
+  color: white;
+
+}
+
+.modal 
+
+{
+
+  display: none; /* Hidden by default */
+
+  position: fixed; /* Stay in place */
+
+  z-index: 1; /* Sit on top */
+
+  padding-top: 100px; /* Location of the box */
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%; /* Full width */
+
+  height: 100%; /* Full height */
+
+  overflow: auto; /* Enable scroll if needed */
+  
+  background-color: rgb(0,0,0); /* Fallback color */
+  
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+
+.modal-content 
+
+{
+
+  background-color: #fefefe;
+
+  margin: auto;
+
+  padding: 20px;
+
+  border: 1px solid #888;
+
+  width: 80%;
+
+}
+
+.pwschanbtn
+
+{
+
+
+  background-color: dodgerblue;
+
+  color: white;
+
+  padding: 12px 20px;
+
+  border: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+}
+
+/* The Close Button */
+
+.modelClose 
+
+{
+
+  color: #aaaaaa;
+
+  float: right;
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+}
+
+.modelClose:hover, .modelClose:focus 
+
+{
+
+  color: #000;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+}
+
+#app, #lab, #ray
+
+{
+
+  display: none;
+
+  columns: 3;
+
+  float: left;
+
+  padding: 20px;
+
+  object-position: center;
+
+}
+
+.card 
+
+{
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  width: 300px;
+
+  margin: auto;
+
+  text-align: center;
+
+  font-family: arial;
+
+}
+
+.title 
+
+{
+
+  color: grey;
+
+  font-size: 18px;
+
+}
+
+.card a 
+
+{
+
+  border: none;
+
+  outline: 0;
+
+  display: inline-block;
+
+  padding: 8px;
+
+  color: white;
+
+  background-color: dodgerblue;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  font-size: 18px;
+
+}
+
+.card a:hover 
+
+{
+
+  opacity: 0.7;
+
+}
+
+.dropdown
+
+{
+
+  margin-right: 10px;
+
+}
+
+.dropdown .dropbtn 
+
+{
+      
+
+  border: none;
+  
+  outline: none;
+
+  padding: 14px 16px;
+  
+  margin: 0;
+
+  float: left;
+
+  color: black;
+
+  text-align: center;
+
+  background-color: inherit;
+
+  text-decoration: none;
+
+  font-size: 18px; 
+
+}
+
+.dropdown-content 
+
+{
+    
+  display: none;
+    
+  position: absolute;
+
+  background-color: #f9f9f9;
+    
+  min-width: 100px;
+    
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+  z-index: 1;
+
+  margin-top: 50px;
+
+}
+
+.dropdown-content a 
+
+{
+    
+  float: none;
+    
+  color: black;
+    
+  font-size: 12px;
+   
+  padding: 12px 16px;
+    
+  text-decoration: none;
+  
+  display: block;
+    
+  text-align: left;
+
+}
+
+.dropdown:hover .dropdown-content 
+
+{
+
+  display: block;
+
+}
+
+.header-right.responsive .dropdown 
+
+{
+
+  float: none;
+
+}
+  
+.header-right.responsive .dropdown-content 
+
+{
+
+  position: relative;
+
+}
+  
+.header-right.responsive .dropdown .dropbtn 
+
+{
+
+  display: block;
+
+  width: 100%;
+
+  text-align: left;
+
+}
+
+.container 
+
+{
+
+  width: 500px;
+
+  height: auto;
+
+  display: block;
+
+  background: #eee;
+
+  padding: 20px;
+
+  border-radius: 3px;
+
+  text-align: left;
+
+}
+
+h1 
+
+{
+
+  font-weight: 300;
+
+  text-align: center;
+
+  margin: 40px auto;
+
+}
+
+.calendar 
+
+{
+
+  display: block;
+
+}
+
+.calendar-day 
+
+{
+
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+
+  background-color: #fff;
+
+  padding: 2px 8px;
+
+  width: 8.6599%;
+
+  line-height: 2px;
+
+  margin: 1%;
+
+  text-align: center;
+
+  display: inline-block;
+
+  cursor: pointer;
+
+  border: solid 1px #fff;
+
+}
+
+.calendar-day:hover 
+
+{
+
+  background: #eee;
+
+}
+
+.controls 
+
+{
+
+  display: block;
+
+  width: 100%;
+
+  text-align: center;
+
+  overflow: hidden;
+
+  margin-bottom: 10px;
+
+}
+
+.today 
+
+{
+
+  font-weight: bold;
+
+  color: #333;
+
+  border: solid 1px #333;
+
+}
+
+.label 
+
+{
+
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+
+  background-color: #fff;
+
+  padding: 20px;
+
+  line-height: 2px;
+
+  margin: 1%;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  display: inline-block;
+
+  cursor: pointer;
+
+  border: solid 1px #fff;
+
+}
+
+.previous 
+
+{
+
+  float: left;
+
+}
+.next 
+
+{
+
+  float: right;
+
+}
+
+.savepro
+{
+
+  background-color: dodgerblue;
+
+  color: white;
+
+  padding: 14px 20px;
+
+  cursor: pointer;
+
+  opacity: 0.9;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  font-size: 18px; 
+
+  border: none;
+
+  margin-top: 30px;
+
+}
+
+.savepro:hover
+
+{
+
+  opacity:1;
+
+}
+
+.map
+
+{
+
+  width: 100%;
+
+  background: black;
+
+}
+
+.donate
+
+{
+
+  width: 100%;
+
+  margin-top: 20px;
+
+}
+
+.row 
+
+{
+
+  display: -ms-flexbox; /* IE10 */
+
+  display: flex;
+
+  -ms-flex-wrap: wrap; /* IE10 */
+
+  flex-wrap: wrap;
+
+  margin: 0 -16px;
+
+}
+
+.col-25 
+{
+
+  -ms-flex: 25%; /* IE10 */
+
+  flex: 25%;
+
+}
+
+.col-50 
+
+{
+
+  -ms-flex: 50%; /* IE10 */
+
+  flex: 50%;
+
+}
+
+.col-75 
+
+{
+
+  -ms-flex: 75%; /* IE10 */
+
+  flex: 75%;
+
+}
+
+.col-25, .col-50, .col-75 
+
+{
+
+  padding: 0 16px;
+
+}
+
+.container 
+
+{
+
+  background-color: #f2f2f2;
+
+  padding: 5px 20px 15px 20px;
+
+  border: 1px solid lightgrey;
+
+  border-radius: 3px;
+
+}
+
+input[type=text] 
+
+{
+
+  width: 100%;
+
+  margin-bottom: 20px;
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 3px;
+
+}
+
+label 
+
+{
+
+  margin-bottom: 10px;
+
+  display: block;
+}
+
+.icon-container 
+
+{
+
+  margin-bottom: 20px;
+
+  padding: 7px 0;
+
+  font-size: 24px;
+
+}
+
+.btn 
+
+{
+
+  background-color: dodgerblue;
+
+  color: white;
+
+  padding: 12px;
+
+  margin: 10px 0;
+
+  border: none;
+
+  width: 100%;
+
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  font-size: 17px;
+
+}
+
+.btn:hover 
+
+{
+
+  opacity: 0.5;
+
+}
+
+a 
+
+{
+
+  color: #2196F3;
+
+}
+
+hr 
+
+{
+
+  border: 1px solid lightgrey;
+
+}
+
+.DepBody
+{
+    
+  background-color: #474e5d;
+  
+  font-family: Helvetica, sans-serif;
+
+}
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline 
+
+{
+
+  position: relative;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+}
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline::after {
+
+  content: '';
+
+  position: absolute;
+
+  width: 6px;
+
+  background-color: white;
+
+  bottom: 0;
+
+  left: 50%;
+
+  margin-left: -3px;
+
+}
+
+/* Container around content */
+
+.container 
+
+{
+
+  padding: 10px 40px;
+  
+  position: relative;
+  
+  background-color: inherit;
+  
+  width: 50%;
+
+}
+
+/* The circles on the timeline */
+
+.container::after 
+
+{
+
+  content: '';
+
+  position: absolute;
+
+  width: 25px;
+
+  height: 25px;
+
+  right: -17px;
+
+  background-color: white;
+
+  border: 4px solid #FF9F55;
+
+  top: 15px;
+
+  border-radius: 50%;
+
+  z-index: 1;
+
+}
+
+/* Place the container to the left */
+
+.left 
+
+{
+
+  left: 0;
+
+}
+
+/* Place the container to the right */
+
+.right 
+
+{
+
+  left: 50%;
+
+}
+
+/* Add arrows to the left container (pointing right) */
+
+.left::before 
+
+{
+
+  content: " ";
+
+  height: 0;
+
+  position: absolute;
+
+  top: 22px;
+
+  width: 0;
+
+  z-index: 1;
+
+  right: 30px;
+
+  border: medium solid white;
+
+  border-width: 10px 0 10px 10px;
+
+  border-color: transparent transparent transparent white;
+
+}
+
+/* Add arrows to the right container (pointing left) */
+
+.right::before 
+
+{
+
+  content: " ";
+
+  height: 0;
+
+  position: absolute;
+
+  top: 22px;
+
+  width: 0;
+
+  z-index: 1;
+
+  left: 30px;
+
+  border: medium solid white;
+
+  border-width: 10px 10px 10px 0;
+
+  border-color: transparent white transparent transparent;
+
+}
+
+/* Fix the circle for containers on the right side */
+
+.right::after 
+
+{
+
+  left: -16px;
+
+}
+
+/* The actual content */
+
+.content 
+
+{
+
+  padding: 20px 30px;
+
+  background-color: white;
+
+  position: relative;
+
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+
+@media all and (max-width: 600px) 
+
+{
+
+  /* Place the timelime to the left */
+
+  .timeline::after
+  
+  {
+  
+    left: 31px;
+  
+  }
+  
+  /* Full-width containers */
+  
+  .container 
+
+  {
+  
+    width: 100%;
+  
+    padding-left: 70px;
+  
+    padding-right: 25px;
+  
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  
+  .container::before 
+
+  {
+  
+    left: 60px;
+  
+    border: medium solid white;
+  
+    border-width: 10px 10px 10px 0;
+  
+    border-color: transparent white transparent transparent;
+  
+  }
+
+  /* Make sure all circles are at the same spot */
+  
+  .left::after, .right::after 
+
+  {
+  
+    left: 15px;
+  
+  }
+  
+  /* Make all right containers behave like the left ones */
+  
+  .right 
+
+  {
+  
+    left: 0%;
+  
+  }
+
+}
+
+.history
+{
+
+  margin: 20px;
+}
+
+.view
+{
+
+  margin:20px;
+
+  padding: 10px;
+}
+
+table 
+
+{
+  
+  width:100%;
+
+  margin-top: 50px;
+
+}
+
+table, th, td 
+
+{
+    
+  border: 1px dodgerblue;
+    
+  border-collapse: collapse;
+
+}
+
+th, td 
+
+{
+    
+  padding: 5px;
+  
+  text-align: left;
+
+}
+
+table#t01 tr:nth-child(even) 
+
+{
+    
+  background-color: #eee;
+
+}
+
+table#t01 tr:nth-child(odd) 
+
+{
+   
+  background-color:#fff;
+
+}
+
+table#t01 th 
+
+{
+  
+  background-color:dodgerblue;
+    
+  color: black;
+
+}
+
+#myBtn
+
+{
+
+  display: none;
+
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 30px;
+
+  z-index: 99;
+
+  font-size: 18px;
+
+  border: none;
+
+  outline: none;
+
+  background-color: red;
+
+  color: white;
+
+  cursor: pointer;
+
+  padding: 15px;
+
+  border-radius: 4px;
+
+}
+
+#myBtn:hover 
+
+{
+
+  background-color: #555;
+
+}
+
+.openBtn 
+
+{
+  
+  background: #f1f1f1;
+  
+  border: none;
+  
+  padding: 10px 15px;
+  
+  font-size: 20px;
+  
+  cursor: pointer;
+
+}
+
+.openBtn:hover 
+
+{
+    
+  background: #bbb;
+
+}
+
+.overlay 
+
+{
+  
+  height: 100%;
+  
+  width: 100%;
+  
+  display: none;
+  
+  position: fixed;
+
+  z-index: 1;
+  
+  top: 0;
+  
+  left: 0;
+  
+  background-color: rgb(0,0,0);
+  
+  background-color: rgba(0,0,0, 0.9);
+
+}
+
+.overlay-content 
+
+{
+
+  position: relative;
+  
+  top: 46%;
+  
+  width: 80%;
+  
+  text-align: center;
+  
+  margin-top: 30px;
+  
+  margin: auto;
+
+}
+
+.overlay .closebtn 
+
+{
+
+  position: absolute;
+
+  top: 20px;
+
+  right: 45px;
+
+  font-size: 60px;
+
+  cursor: pointer;
+
+  color: white;
+
+}
+
+.overlay .closebtn:hover 
+
+{
+
+  color: #ccc;
+
+}
+
+.overlay input[type=text] 
+
+{
+
+  padding: 15px;
+
+  font-size: 17px;
+
+  border: none;
+
+  float: left;
+
+  width: 80%;
+
+  background: white;
+
+}
+
+.overlay input[type=text]:hover 
+
+{
+
+  background: #f1f1f1;
+
+}
+
+.overlay button 
+
+{
+
+  float: left;
+
+  width: 20%;
+
+  padding: 15px;
+
+  background: #ddd;
+
+  font-size: 17px;
+
+  border: none;
+
+  cursor: pointer;
+
+}
+
+.overlay button:hover 
+
+{
+ 
+  background: #bbb;
+
+}
+
+.searchdiv
+
+{
+
+  display: none;
+
+}
+
+.search-overlay
+
+{
+
+  display: none;
+
+}
+
+.Add-overlay
+
+{
+
+  display: none;
+
+}
+
+.Report-overlay
+
+{
+
+  display: none;
+
+  background: red;
+
+}
+
+.regForm 
+
+{
+
+  margin: 100px auto;
+
+  font-family: Raleway;
+
+  padding: 40px;
+
+  width: 100%;
+
+  min-width: 300px;
+
+  height: 100%;
+
+  min-height: 300px;
+
+  position: fixed;
+
+  z-index: 1;
+  
+  top: 0;
+  
+  left: 0;
+
+}
+
+.tab h1 
+
+{
+
+  text-align: center; 
+
+  color: white; 
+
+}
+
+.tab input 
+
+{
+
+  padding: 10px;
+
+  width: 100%;
+
+  font-size: 17px;
+
+  font-family: Raleway;
+
+  border: 1px solid #aaaaaa;
+
+}
+
+/* Mark input boxes that gets an error on validation: */
+
+.tab input.invalid 
+
+{
+
+  background-color: #ffdddd;
+
+}
+
+/* Hide all steps by default: */
+
+.tab 
+
+{
+
+  display: none;
+
+}
+
+.regForm button 
+
+{
+
+  background-color: dodgerblue;
+
+  color: #ffffff;
+
+  border: none;
+
+  padding: 10px 20px;
+
+  font-size: 17px;
+
+  width: auto;
+
+  font-family: Raleway;
+
+  cursor: pointer;
+
+  margin-left: 10px;
+
+  position: relative;
+
+}
+
+.regForm button:hover 
+
+{
+ 
+  opacity: 0.8;
+
+}
+
+/* Make circles that indicate the steps of the form: */
+
+.step 
+
+{
+
+  height: 15px;
+
+  width: 15px;
+
+  margin: 0 2px;
+
+  background-color: dodgerblue;
+
+  border: none;  
+
+  border-radius: 50%;
+
+  display: inline-block;
+
+  opacity: 0.5;
+
+  position: relative;
+
+}
+
+.step.active 
+
+{
+
+  opacity: 1;
+
+}
+
+/* Mark the steps that are finished and valid: */
+
+.step.finish 
+
+{
+
+  background-color: #4CAF50;
+
+}
+
+.custom-select 
+
+{
+
+  font-family: Arial;
+
+  width: 300px;
+
+  position: relative;
+
+}
+
+.custom-select select 
+
+{
+
+  display: none; /*hide original SELECT element:*/
+
+}
+
+.select-selected 
+
+{
+
+  background-color: DodgerBlue;
+
+}
+
+/*style the arrow inside the select element:*/
+
+.select-selected:after 
+
+{
+
+  position: absolute;
+
+  content: "";
+
+  top: 14px;
+
+  right: 10px;
+
+  width: 0;
+
+  height: 0;
+
+  border: 6px solid transparent;
+
+  border-color: #fff transparent transparent transparent;
+
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+
+.select-selected.select-arrow-active:after 
+
+{
+
+  border-color: transparent transparent #fff transparent;
+
+  top: 7px;
+
+}
+
+/*style the items (options), including the selected item:*/
+
+.select-items div,.select-selected
+
+{
+
+  color: white;
+ 
+  padding: 8px 16px;
+ 
+  border: 1px solid transparent;
+ 
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+ 
+  cursor: pointer;
+ 
+  user-select: none;
+
+}
+
+/*style items (options):*/
+
+.select-items 
+
+{
+
+  position: absolute;
+
+  background-color: dodgerblue;
+
+  top: 100%;
+
+  left: 0;
+
+  right: 0;
+
+  z-index: 99;
+
+}
+
+/*hide the items when the select box is closed:*/
+
+.select-hide 
+
+{
+
+  display: none;
+
+}
+
+.select-items div:hover 
+
+{
+
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.labreport
+
+{
+
+  color: white;
+
+  display: none;
+
+}
+
+.labelreport input
+
+{
+
+  padding: 15px;
+
+  font-size: 17px;
+
+  border: none;
+
+  float: left;
+
+  width: 50%;
+
+  background: white;
+
+}
+
+.labreport label
+
+{
+  
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+
+  background-color: #fff;
+
+  padding: 20px;
+
+  line-height: 2px;
+
+  margin: 1%;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  display: inline-block;
+
+  cursor: pointer;
+
+  border: solid 1px #fff;
+
+  width: auto;
+
+}
+
+.labelreport input:hover 
+
+{
+
+  background: #f1f1f1;
+
+}
+
+.labreport table 
+
+{
+
+  border-collapse: collapse;
+
+  border-spacing: 0;
+
+  width: 100%;
+  
+  border: 1px solid #ddd;
+
+}
+
+.labreport th, td 
+
+{
+
+  text-align: left;
+
+  padding: 16px;
+
+}
+
+.labreport tr:nth-child(even) 
+
+{
+ 
+  background-color: #f2f2f2
+
+}
+
+#reportbtn
+
+{
+
+  display: none;
+
+}
+
+#addbtn, #backbutn
+
+{
+
+  font-size: 18px;
+
+  border: none;
+
+  background-color: dodgerblue;
+
+  color: white;
+
+  cursor: pointer;
+
+  padding: 15px;
+
+  margin:5px;
+
+  border-radius: 4px;
+
+}
+
+#addbtn:hover 
+
+{
+
+  background-color: #555;
+}
+
+#form
+{
+
+}

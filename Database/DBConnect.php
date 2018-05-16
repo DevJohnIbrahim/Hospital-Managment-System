@@ -1,0 +1,41 @@
+<?php
+class DB{
+    private $hostname = 'localhost';
+    private $userName = 'root';
+    private $Password = '';
+    private $DBName = 'softwareproject';
+    private static $instance;
+    public $con;
+    public function __construct()
+    {
+        $this->con = new mysqli($this->hostname,$this->userName,$this->Password,$this->DBName);
+    }
+
+    public static function getInstance(){
+        if (!self::$instance){
+            self::$instance = new self();
+        }
+        return self::$instance;
+    }
+
+    public function execute($sql){
+        $result = $this->con->query($sql);
+        return $result;
+        /*if ($this->con->query($sql) === TRUE) {
+            // echo "New record created successfully. Last inserted ID is: ";
+            echo "Good";
+        } else {
+            echo $this->con->error;
+        }*/
+    }
+
+    public function disconnect(){
+        $this->con->close();
+    }
+
+    public function getID(){
+        $ID = $this->con->insert_id;
+        return $ID;
+    }
+}
+?>
